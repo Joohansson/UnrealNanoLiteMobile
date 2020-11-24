@@ -1,0 +1,115 @@
+{
+	"Version": 28,
+	"Id": "89E22627467FD0611C2E46B115F0F6FD",
+	"Name": "UnrealNanoLight",
+	"Description": "UnrealNano",
+	"BuildConfiguration": 4,
+	"ProjectSpecified": true,
+	"ShareableProjectPath": "D:/UnrealNanoLightMobile-master/UnrealNanoLight.uproject",
+	"CookConfiguration": 4,
+	"CookIncremental": false,
+	"CookOptions": "",
+	"CookMode": 1,
+	"CookUnversioned": true,
+	"CookedCultures": [
+		"en"
+	],
+	"CookedPlatforms": [
+		"Android"
+	],
+	"DeployStreamingServer": false,
+	"DeployWithUnrealPak": true,
+	"DeployedDeviceGroupId": "9CCED7424956E6C9A5616D83AC1E59CB",
+	"DeploymentMode": 0,
+	"HideFileServerWindow": false,
+	"LaunchMode": 0,
+	"PackagingMode": 1,
+	"PackageDir": "",
+	"BuildMode": 1,
+	"ForceClose": true,
+	"Timeout": 60,
+	"Compressed": true,
+	"EncryptIniFiles": false,
+	"ForDistribution": true,
+	"DeployPlatform": "None",
+	"NumCookersToSpawn": 0,
+	"SkipCookingEditorContent": true,
+	"DeployIncremental": false,
+	"GeneratePatch": false,
+	"AddPatchLevel": false,
+	"StageBaseReleasePaks": false,
+	"DLCIncludeEngineContent": false,
+	"CreateReleaseVersion": false,
+	"CreateReleaseVersionName": "1.0",
+	"BasedOnReleaseVersionName": "",
+	"CreateDLC": false,
+	"DLCName": "",
+	"GenerateChunks": false,
+	"GenerateHttpChunkData": false,
+	"HttpChunkDataDirectory": "",
+	"HttpChunkDataReleaseName": "",
+	"Archive": false,
+	"ArchiveDirectory": "",
+	"AdditionalCommandLineParameters": "",
+	"IncludePrerequisites": true,
+	"DefaultRole":
+	{
+		"AssignedDevice": "",
+		"CommandLine": "",
+		"DeviceId": "",
+		"InitialCulture": "en",
+		"InitialMapName": "",
+		"Name": "DefaultRole",
+		"InstanceType": 2,
+		"VsyncEnabled": false
+	},
+	"scripts": [
+		{
+			"script": "BuildCookRun",
+			"project": "D:/UnrealNanoLightMobile-master/UnrealNanoLight.uproject",
+			"noP4": true,
+			"nocompile": false,
+			"nocompileeditor": false,
+			"ue4exe": "",
+			"utf8output": true,
+			"clientconfig": [
+				"Shipping"
+			],
+			"serverconfig": [
+				"Shipping"
+			],
+			"platform": [
+				"Android"
+			],
+			"cmdline":
+			{
+				"": "",
+				"messaging": true
+			},
+			"device": [],
+			"addcmdline":
+			{
+				"sessionid": "48C7F2F64C570BA37AFF48BCB73558E8",
+				"sessionowner": "David",
+				"sessionname": "UnrealNanoLight"
+			},
+			"map": [
+				""
+			],
+			"build": true,
+			"cook": true,
+			"unversionedcookedcontent": true,
+			"pak": true,
+			"generatepatch": false,
+			"manifests": false,
+			"iterativecooking": false,
+			"iteratesharedcookedbuild": false,
+			"skipcookingeditorcontent": true,
+			"compressed": true,
+			"EncryptIniFiles": false,
+			"ForDistribution": true,
+			"stage": true,
+			"package": true
+		}
+	]
+}
