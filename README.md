@@ -19,7 +19,7 @@ If 2 can't find SdkPath. Add it to regedit at Computer\HKEY_LOCAL_MACHINE\SOFTWA
 ## Build Instructions for the Game
 1. Clone this repo
 2. Right click on UnrealNanoLite.uproject and "switch unreal engine version". Select the UE source you just installed (should be listed)
-3. Right click on UnrealNanoLite.uproject and "Generate Xcode Project"
+3. If Mac: Right click on UnrealNanoLite.uproject and "Generate Xcode Project"
 4. Open UnrealNanoLite.sln in Visual Studio or UnrealNanoLite.xcodeproj xcode (Windows Vs. Mac)
 5. Make sure "Development editor" and "Win64" is selected in the dropdowns (Project/Scheme/Edit scheme in xcode)
 6. Right click on the Games/UnrealNanoLite in the solution explorer and Build (this will build the Nano plugin)
