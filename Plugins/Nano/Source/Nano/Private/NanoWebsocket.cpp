@@ -38,7 +38,7 @@ void UNanoWebsocket::Connect(const FString& wsURL, FWebsocketConnectedDelegate d
 		FModuleManager::Get().LoadModule("WebSockets");
 	}
 
-	Websocket = FWebSocketsModule::Get().CreateWebSocket(wsURL, TEXT("ws"));
+	Websocket = FWebSocketsModule::Get().CreateWebSocket(wsURL, TEXT("wss"));
 
 	// Need to call all these before connecting (I think)
 
