@@ -220,7 +220,7 @@ private:
 	void MakeRequest(TSharedPtr<FJsonObject> JsonObject,
 		TFunction<void(FHttpRequestPtr request, FHttpResponsePtr response, bool wasSuccessful)> delegate);
 
-	TSharedRef<IHttpRequest> CreateHttpRequest(TSharedPtr<FJsonObject> JsonObject);
+	TSharedRef<IHttpRequest, ESPMode::ThreadSafe> CreateHttpRequest(TSharedPtr<FJsonObject> JsonObject);
 
 	TSharedPtr<FJsonObject> GetAccountFrontierJsonObject(FString const& account);
 	FAccountFrontierResponseData GetAccountFrontierResponseData(

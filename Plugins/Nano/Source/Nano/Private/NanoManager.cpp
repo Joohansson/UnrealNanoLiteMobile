@@ -1037,8 +1037,8 @@ void UNanoManager::CancelPayout(FString const& account, UNanoWebsocket* websocke
 	}
 }
 
-TSharedRef<IHttpRequest> UNanoManager::CreateHttpRequest(TSharedPtr<FJsonObject> JsonObject) {
-	TSharedRef<IHttpRequest> HttpRequest = FHttpModule::Get().CreateRequest();
+TSharedRef<IHttpRequest, ESPMode::ThreadSafe> UNanoManager::CreateHttpRequest(TSharedPtr<FJsonObject> JsonObject) {
+	auto HttpRequest = FHttpModule::Get().CreateRequest();
 	HttpRequest->SetVerb("POST");
 	HttpRequest->SetHeader(TEXT("User-Agent"), "X-UnrealEngine-Agent");
 	HttpRequest->SetHeader("Content-Type", "application/json");
