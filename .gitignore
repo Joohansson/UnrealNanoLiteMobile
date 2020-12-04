@@ -83,3 +83,5 @@ LocalDerivedDataCache/*
 *~
 
 *.log
+Content/StarterContent/*
+Build/Android/src/*

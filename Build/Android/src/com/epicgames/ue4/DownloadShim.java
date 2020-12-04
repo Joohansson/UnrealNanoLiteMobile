@@ -1,10 +1,10 @@
 package com.epicgames.ue4;
 
-import cc.nanos.unreal_nano_l.OBBDownloaderService;
-import cc.nanos.unreal_nano_l.DownloaderActivity;
+import cc.nanos.UnrealNano.OBBDownloaderService;
+import cc.nanos.UnrealNano.DownloaderActivity;
 import android.app.Activity;
 import com.google.android.vending.expansion.downloader.Helpers;
-import cc.nanos.unreal_nano_l.OBBData;
+import cc.nanos.UnrealNano.OBBData;
 
 
 public class DownloadShim
