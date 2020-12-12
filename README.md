@@ -19,11 +19,11 @@ If 2 can't find SdkPath. Add it to regedit at Computer\HKEY_LOCAL_MACHINE\SOFTWA
 ## Build Instructions for the Game
 1. Clone this repo
 2. Right click on UnrealNanoLite.uproject and "switch unreal engine version". Select the UE source you just installed (should be listed)
-3. If Mac: Right click on UnrealNanoLite.uproject and "Generate Xcode Project"
+3. If Mac: Right click on UnrealNanoLite.uproject and "Generate Xcode Project" (Check the troubleshoot section further down)
 4. Open UnrealNanoLite.sln in Visual Studio or UnrealNanoLite.xcodeproj xcode (Windows Vs. Mac)
-5. Make sure "Development editor" and "Win64" is selected in the dropdowns (Project/Scheme/Edit scheme in xcode)
-6. Right click on the Games/UnrealNanoLite in the solution explorer and Build (this will build the Nano plugin)
-7. "Debug/Start without debugging" to open the editor (Product -> Run in xcode) or close VS and run the UnrealNanoLite.uproject (should launch in correct editor). Step 6 is not needed if only packaging on Windows. But on a Mac you need to package from Unreal Engine
+5. Make sure "Development editor" and "Win64" is selected in the dropdowns (Product/Scheme/Edit scheme in xcode)
+6. Right click on the Games/UnrealNanoLite in the solution explorer and Build (Windows) or Product/Build (Mac) (this will build the Nano plugin)
+7. "Debug/Start without debugging" to open the editor (Windows) or Product -> Run in xcode (Mac) or close VS and run the UnrealNanoLite.uproject (should launch in correct editor). Step 6 is not needed if only packaging on Windows. But on a Mac you need to package from Unreal Engine
 
 ## Package Instructions [Android](https://docs.unrealengine.com/en-US/Platforms/Mobile/Android/PackagingAndroidProject/index.html) - Mac
 1. Start the game engine via step 6 above
@@ -55,3 +55,23 @@ If 2 can't find SdkPath. Add it to regedit at Computer\HKEY_LOCAL_MACHINE\SOFTWA
 
 ## Install iOS app (Windows)
 1. Use iPhonePackager [Docs](https://docs.unrealengine.com/en-US/Platforms/Mobile/iOS/iPhonePackager/index.html)
+
+## Troubleshooting on Mac
+Could be permission bugs when using UE4.26. First when generating xcode project files and then when building inside xcode. One solution for when generating xcode files fails is to press arrow up key in the terminal to get latest command and put "sudo" in front of the command. Another way is to run this (given these are the files it complains about). Not sure of chmod is needed.
+Replace "user" with your username (maybe also the group "staff").
+
+```
+sudo chown user:staff "/Users/Shared/Epic Games/UE_4.26/Engine/Source/Programs/DotNETCommon/DotNETUtilities/obj/Development/DotNETUtilities.dll"
+sudo chown user:staff "/Users/Shared/Epic Games/UE_4.26/Engine/Source/Programs/DotNETCommon/DotNETUtilities/obj/Development/DotNETUtilities.pdb"
+sudo chown user:staff "/Users/Shared/Epic Games/UE_4.26/Engine/Source/Programs/DotNETCommon/DotNETUtilities/obj/Development/DotNETUtilities.csproj.FilesWrittenAbsolute.txt"
+sudo chmod 777 "/Users/Shared/Epic Games/UE_4.26/Engine/Source/Programs/DotNETCommon/DotNETUtilities/obj/Development/DotNETUtilities.dll"
+sudo chmod 777 "/Users/Shared/Epic Games/UE_4.26/Engine/Source/Programs/DotNETCommon/DotNETUtilities/obj/Development/DotNETUtilities.pdb"
+sudo chmod 777 "/Users/Shared/Epic Games/UE_4.26/Engine/Source/Programs/DotNETCommon/DotNETUtilities/obj/Development/DotNETUtilities.csproj.FilesWrittenAbsolute.txt"
+```
+
+It's also likely you will get a similar permission error when building the game in xcode (different file). This should work:
+
+```
+sudo chown user:staff "/Users/Shared/Epic Games/UE_4.26/Engine/Source/Programs/UnrealBuildTool/obj/Development/UnrealBuildTool.csproj.FilesWrittenAbsolute.txt"
+sudo chmod 777 "/Users/Shared/Epic Games/UE_4.26/Engine/Source/Programs/UnrealBuildTool/obj/Development/UnrealBuildTool.csproj.FilesWrittenAbsolute.txt"
+```
