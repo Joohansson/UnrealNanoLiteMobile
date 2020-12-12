@@ -5,7 +5,7 @@
 
 ## Prereqs Android
 1. Download and install Android Studio 3.5.3. [Instructions](https://docs.unrealengine.com/en-US/Platforms/Mobile/Android/Setup/AndroidStudio/index.html)
-2. Run the SetupAndroid (for example .bat if windows) script located in UnrealEngine-release\Engine\Extras\Android
+2. Run the SetupAndroid (for example .bat if windows, .sh if Mac) script located in UnrealEngine\Engine\Extras\Android. Mac: /Users/Shared/Epic Games/UE_4.26/Engine/Extras/Android
 3. A keystore file and password that represent your Android dev account [Instructions](https://docs.unrealengine.com/en-US/Platforms/Mobile/Android/DistributionSigning/index.html)
 
 If 2 can't find SdkPath. Add it to regedit at Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Android Studio such as "C:\NVPACK\android-sdk-windows"
