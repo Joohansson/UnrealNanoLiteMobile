@@ -20,10 +20,11 @@ If 2 can't find SdkPath. Add it to regedit at Computer\HKEY_LOCAL_MACHINE\SOFTWA
 1. Clone this repo
 2. Right click on UnrealNanoLite.uproject and "switch unreal engine version". Select the UE source you just installed (should be listed)
 3. If Mac: Right click on UnrealNanoLite.uproject and "Generate Xcode Project" (Check the troubleshoot section further down)
-4. Open UnrealNanoLite.sln in Visual Studio or UnrealNanoLite.xcodeproj xcode (Windows Vs. Mac)
-5. Make sure "Development editor" and "Win64" is selected in the dropdowns (Product/Scheme/Edit scheme in xcode)
-6. Right click on the Games/UnrealNanoLite in the solution explorer and Build (Windows) or Product/Build (Mac) (this will build the Nano plugin)
-7. "Debug/Start without debugging" to open the editor (Windows) or Product -> Run in xcode (Mac) or close VS and run the UnrealNanoLite.uproject (should launch in correct editor). Step 6 is not needed if only packaging on Windows. But on a Mac you need to package from Unreal Engine
+4. Step 5-8 is not needed on Mac. Can just open UnrealNanoLite.uproject directly and it should ask to build the Nano plugin
+5. Open UnrealNanoLite.sln in Visual Studio or UnrealNanoLite.xcodeproj xcode (Windows Vs. Mac)
+6. Make sure "Development editor" and "Win64" is selected in the dropdowns (Product/Scheme/Edit scheme in xcode)
+7. Right click on the Games/UnrealNanoLite in the solution explorer and Build (Windows) or Product/Build (Mac) (this will build the Nano plugin)
+8. "Debug/Start without debugging" to open the editor (Windows) or Product -> Run in xcode (Mac) or close VS and run the UnrealNanoLite.uproject (should launch in correct editor). Step 6 is not needed if only packaging on Windows. But on a Mac you need to package from Unreal Engine
 
 ## Package Instructions [Android](https://docs.unrealengine.com/en-US/Platforms/Mobile/Android/PackagingAndroidProject/index.html) - Mac
 1. Start the game engine via step 6 above
