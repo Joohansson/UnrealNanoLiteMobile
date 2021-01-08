@@ -1,7 +1,8 @@
 # Unreal Nano Lite for Mobile
 
 ## Prereqs UE
-1. Download and install the latest [Unreal Engine](https://www.unrealengine.com/en-US/download) (Publishing license)
+1. Download and install [Unreal Engine](https://www.unrealengine.com/en-US/download) (Publishing license)
+2. Currently tested and developed on Unreal Engine 4.26. Not backward compatible but hopefully forward with little effort.
 
 ## Prereqs Android
 1. Download and install Android Studio 3.5.3. [Instructions](https://docs.unrealengine.com/en-US/Platforms/Mobile/Android/Setup/AndroidStudio/index.html)
