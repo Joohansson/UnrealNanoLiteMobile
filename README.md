@@ -1,5 +1,8 @@
 # Unreal Nano Lite for Mobile
 
+* [Youtube Trailer](https://youtu.be/IM03kMzry8I)
+* [Downloads](https://unreal.nanos.cc)
+
 ## Prereqs UE
 1. Download and install [Unreal Engine](https://www.unrealengine.com/en-US/download) (Publishing license)
 2. Currently tested and developed on Unreal Engine 4.26. Not backward compatible but hopefully forward with little effort.
@@ -78,3 +81,6 @@ It's also likely you will get a similar permission error when building the game 
 sudo chown user:staff "/Users/Shared/Epic Games/UE_4.26/Engine/Source/Programs/UnrealBuildTool/obj/Development/UnrealBuildTool.csproj.FilesWrittenAbsolute.txt"
 sudo chmod 777 "/Users/Shared/Epic Games/UE_4.26/Engine/Source/Programs/UnrealBuildTool/obj/Development/UnrealBuildTool.csproj.FilesWrittenAbsolute.txt"
 ```
+
+## Special Thanks
+[Nano Plugin for Unreal Engine](https://github.com/wezrule/UE4NanoPlugin)
