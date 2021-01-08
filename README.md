@@ -2,6 +2,7 @@
 
 * [Youtube Trailer](https://youtu.be/IM03kMzry8I)
 * [Downloads](https://unreal.nanos.cc)
+* [Unreal Nano Lite Desktop](https://github.com/Joohansson/UnrealNanoLiteDesktop)
 
 ## Prereqs UE
 1. Download and install [Unreal Engine](https://www.unrealengine.com/en-US/download) (Publishing license)
